@@ -1,0 +1,221 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "RENDERSYSTEM AppWizard\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RENDERSYSTEM\0"
+            VALUE "LegalCopyright", "Copyright © 2005 X\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RENDERSYSTEM.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "RenderSystem Wizard\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CUSTOM1 DIALOG DISCARDABLE  0, 0, 300, 192
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Render System",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,30,28,64,10
+    CONTROL         "Rotating System",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,30,43,67,10
+    GROUPBOX        "Base system type",IDC_STATIC,19,15,97,63,BS_FLAT
+    CONTROL         "Render color (R G B)",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,172,105,78,10
+    CONTROL         "Brightness (alpha)",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,172,120,72,10
+    CONTROL         "Origin (X Y Z)",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,172,30,58,10
+    CONTROL         "Srite (index)",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,172,60,53,10
+    CONTROL         "Render mode",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,172,75,59,10
+    CONTROL         "Life time",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,172,90,42,10
+    CONTROL         "Scale",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,172,135,34,10
+    CONTROL         "Angles (X Y Z)",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,172,45,61,10
+    GROUPBOX        "Standard functions",IDC_STATIC,19,89,97,80,BS_FLAT
+    GROUPBOX        "Standard input parameters",IDC_STATIC,148,15,132,154,
+                    BS_FLAT
+    CONTROL         "Update",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,30,111,39,10
+    CONTROL         "Render",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,30,129,39,10
+    CONTROL         "InitializeParticle",IDC_CHECK11,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,30,147,60,10
+    CONTROL         "Particle System",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,30,58,64,10
+END
+
+IDD_CUSTOM2 DIALOG DISCARDABLE  0, 0, 300, 192
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Add",IDC_BUTTON1,226,143,42,14,BS_FLAT
+    LISTBOX         IDC_LIST1,25,29,249,77,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO1,147,143,65,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,24,143,110,14,ES_AUTOHSCROLL
+    LTEXT           "Name",IDC_STATIC,23,128,86,8
+    GROUPBOX        "Additional input parameters",IDC_STATIC,13,15,271,154,
+                    BS_FLAT
+    LTEXT           "Type",IDC_STATIC,148,128,17,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEMPLATE
+//
+
+NEWPROJ.INF             TEMPLATE DISCARDABLE    "template\\newproj.inf"
+CONFIRM.INF             TEMPLATE DISCARDABLE    "template\\confirm.inf"
+ROOT.CPP                TEMPLATE DISCARDABLE    "Template\\root.cpp"
+ROOT.H                  TEMPLATE DISCARDABLE    "Template\\root.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_RENDERSYSTEM        ICON    DISCARDABLE     "res\\RenderSystem.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CUSTOM2 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0x7962, 0x6574, "\000" 
+    0
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "#include ""afxres.rc""  // Standard components\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+#include "afxres.rc"  // Standard components
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

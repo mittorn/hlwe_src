@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: shit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\user\LOCALS~1\Temp\RSPB.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Release/" /Fp"Release/shit.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\user\Рабочий стол\game$\hlwe_source\samogon script\parser.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\user\LOCALS~1\Temp\RSPB.tmp" 
+Creating temporary file "C:\DOCUME~1\user\LOCALS~1\Temp\RSPC.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/samogon script.pdb" /machine:I386 /out:"Release/samogon script.exe" 
+".\Release\error.obj"
+".\Release\kernel.obj"
+".\Release\keywords.obj"
+".\Release\operators.obj"
+".\Release\parser.obj"
+".\Release\shit.obj"
+".\Release\StdAfx.obj"
+".\Release\logo.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\user\LOCALS~1\Temp\RSPC.tmp"
+<h3>Output Window</h3>
+Compiling...
+parser.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/samogon script.bsc"  ".\Release\StdAfx.sbr" ".\Release\error.sbr" ".\Release\kernel.sbr" ".\Release\keywords.sbr" ".\Release\operators.sbr" ".\Release\parser.sbr" ".\Release\shit.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+samogon script.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,59 @@
+A new Render System will be created for you.
+
+The following files will be added to your workspace:
+
+$$PREFIX$$$$Root$$.cpp
+$$PREFIX$$$$Root$$.h
+
+Class name: C$$PREFIX$$$$Safe_root$$
+
+Base class:
+$$IF(PARTSYSTEM)
+CPartSystem (creates particles)
+$$ELSE
+$$IF(ROTSYSTEM)
+CRotatingSystem (uses rotation matrix to calculate absolute orientation)
+$$ELSE
+CRenderSystem (basic system)
+$$ENDIF
+$$ENDIF
+
+The following virtual functions will be added:
+$$IF(FN_INITIALIZEPARTICLE)
+virtual void InitializeParticle(int index);
+$$ENDIF
+$$IF(FN_UPDATE)
+virtual bool Update(float time, double elapsedTime);
+$$ENDIF
+$$IF(FN_RENDER)
+virtual void Render(void);
+$$ENDIF
+
+The following input parameters will be added:
+$$IF(ARG_ORIGIN)
+vec3_t origin,
+$$ENDIF
+$$IF(ARG_ANGLES)
+vec3_t angles,
+$$ENDIF
+$$IF(ROTSYSTEM)
+vec3_t anglesdelta,
+$$ENDIF
+$$IF(ARG_SPRITE)
+int sprindex,
+$$ENDIF
+$$IF(ARG_RENDERMODE)
+int r_mode,
+$$ENDIF
+$$IF(ARG_RENDERCOLOR)
+byte r, byte g, byte b,
+$$ENDIF
+$$IF(ARG_BRIGHTNESS)
+float a, float adelta,
+$$ENDIF
+$$IF(ARG_SCALE)
+float scale, float scaledelta,
+$$ENDIF
+$$IF(ARG_LIFE)
+float timetolive
+$$ENDIF
